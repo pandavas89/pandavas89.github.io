@@ -9,3 +9,5 @@ Pelican으로 Github Pages 만들기
 `pip install pelican`
 
 `pelican-quickstart`
+
+post 변경 테스트
