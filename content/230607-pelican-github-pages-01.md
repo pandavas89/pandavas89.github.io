@@ -10,4 +10,4 @@ Pelican으로 Github Pages 만들기
 
 `pelican-quickstart`
 
-post 변경 테스트 2
+post 변경 테스트 3
