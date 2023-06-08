@@ -1,6 +1,6 @@
 AUTHOR = 'pandavas89'
 SITENAME = 'PlayEng Ground'
-SITEURL = 'http://blog.tykl.me'
+SITEURL = 'https://blog.tykl.me'
 
 PATH = 'content'
 
