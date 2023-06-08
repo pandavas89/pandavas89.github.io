@@ -1,6 +1,5 @@
 Title: Pelican on Github Pages 02
 Date: 2023-06-08 18:00:00
-Category: Python
 Tags: Pelican, Github, Github Action
 
 [앞선 글](/pelican-on-github-pages-02)에서, `Pelican`으로 정적 사이트를 생성하고 배포하는 방법을 알아보았다. 이제, `Pelican` 프로젝트를 푸시하면 자동으로 `Github Pages`가 업데이트 되도록 해 보자.

@@ -33,5 +33,7 @@ DEFAULT_DATE_FORMAT = '%Y/%m/%d %H:%M'
 
 THEME = 'theme/aboutwilson'
 
+USE_FOLDER_AS_CATEGORY = True
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
