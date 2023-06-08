@@ -35,5 +35,7 @@ THEME = 'theme/aboutwilson'
 
 USE_FOLDER_AS_CATEGORY = True
 
+DISQUS_SITENAME = 'pandavas'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
