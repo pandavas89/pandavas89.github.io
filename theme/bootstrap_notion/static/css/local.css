@@ -1,3 +1,22 @@
+.toc {
+	font-size: small;
+	display: table;
+	width: auto;
+}
+
+.toc .toctitle {
+	font-weight: bold;
+}
+
+.toc ul {
+	list-style-type: none;
+	padding-left: 1rem;
+}
+
+.toc > ul {
+	padding-left: 0;
+	margin-top: 0;
+}
 
 .my-list-style {
     margin-left: 0;

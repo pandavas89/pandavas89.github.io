@@ -22,6 +22,20 @@ LINKS = (
     ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
 )
 
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.codehilite': {
+            'ss_class': 'highlight'
+        },
+        'markdown.extensions.extra': {},
+        'markdown.extensions.meta': {},
+        'markdown.extensions.toc': {
+            'title': 'Contents',
+        },
+    },
+    'output_format': 'html5',
+}
+
 # Social widget
 SOCIAL = (
     ('Instagram', 'https://www.instagram.com/pandavas89/'),
