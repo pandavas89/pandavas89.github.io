@@ -3,9 +3,7 @@ Subtitle: Github Action으로 Pelican 기반 Github Pages 배포 자동화하기
 Date: 2023-06-08 18:00:00
 Tags: Pelican, Github, Github Action
 
-[TOC]
-
-[앞선 글](/pelican-on-github-pages-02)에서, `Pelican`으로 정적 사이트를 생성하고 배포하는 방법을 알아보았다. 이제, `Pelican` 프로젝트를 푸시하면 자동으로 `Github Pages`가 업데이트 되도록 해 보자.
+[앞선 글](/pelican-on-github-pages-01)에서, `Pelican`으로 정적 사이트를 생성하고 배포하는 방법을 알아보았다. 이제, `Pelican` 프로젝트를 푸시하면 자동으로 `Github Pages`가 업데이트 되도록 해 보자.
 
 # Github Pages 배포 Github Action으로 자동화하기
 1. 리포지토리 루트 폴더에 `.github/workflows`를 생성해 준다.
@@ -42,7 +40,3 @@ jobs:
 4. `Github Action`을 설정해 주었기 때문에, Push의 결과로 Github Action이 작동한다. 리포지토리의 Action 탭에서 확인할 수 있다.
 
 이로써 프로젝트 푸시에 따라 자동적으로 Github Pages가 업데이트되도록 설정했다.
-
-## TOC 테스트 1
-### TOC 테스트 1-1
-# TOC 테스트 2

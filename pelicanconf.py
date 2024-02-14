@@ -22,19 +22,8 @@ LINKS = (
     ('Jinja2', 'https://palletsprojects.com/p/jinja/'),
 )
 
-MARKDOWN = {
-    'extension_configs': {
-        'markdown.extensions.codehilite': {
-            'ss_class': 'highlight'
-        },
-        'markdown.extensions.extra': {},
-        'markdown.extensions.meta': {},
-        'markdown.extensions.toc': {
-            'title': 'Contents',
-        },
-    },
-    'output_format': 'html5',
-}
+PLUGIN_PATHS = ['pelican-plugins']
+PLUGINS = ['pelican-toc']
 
 # Social widget
 SOCIAL = (
