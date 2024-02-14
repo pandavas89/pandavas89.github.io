@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block description %}Title: {{ article.title }}; Date: {{ article.date|strftime('%Y-%m-%d') }};{% endblock %}
+{% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
+{% block content %}
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="article-header mb-3 bg-light p-3">
+		<h1 itemprop="name headline">{{ article.title }}</h1>
+		{% if article.subtitle %}
+		<h3>{{ article.subtitle }}</h3>
+		{% endif %}
+		<div class="d-flex justify-content-between">
+			<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
+			<div class="d-flex justify-content-end">
+			{% if article.category %}
+				<span itemprop="articleSection" class="px-1">
+					<a href="{{ SITEURL }}/{{ article.category.url }}" rel="category" class="badge bg-danger text-decoration-none">{{ article.category }}</a>
+				</span>
+			{% endif %}
+			{% if article.tags %} 
+				{% for tag in article.tags %}
+				<span itemprop="keywords" class="px-1">
+					<a href="{{ SITEURL }}/{{ tag.url }}" rel="tag" class="badge bg-primary text-decoration-none">{{ tag }}</a>
+				</span>
+				{% endfor %}
+			{% endif %}
+			</div>
+		</div>
+	</div>
+	<div itemprop="articleBody" class="article-body">{{ article.content }}</div>
+	<hr>
+	<h2>Comments</h2>
+	{% include "twitter.html" %}
+	{% include 'disqus.html' %}
+</div>
+{% endblock %}

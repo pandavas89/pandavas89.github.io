@@ -29,9 +29,10 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-DEFAULT_DATE_FORMAT = '%Y/%m/%d %H:%M'
+DEFAULT_DATE_FORMAT = '%Y/%m/%d'
 
-THEME = 'theme/aboutwilson'
+#THEME = 'theme/aboutwilson'
+THEME = 'theme/bootstrap_notion'
 
 USE_FOLDER_AS_CATEGORY = True
 
