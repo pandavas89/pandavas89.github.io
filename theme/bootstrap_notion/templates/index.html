@@ -3,8 +3,8 @@
 {% block content %}
 {% if articles %}
 {% for article in articles_page.object_list %}
-<div class="article" itemscope itemtype="http://schema.org/BlogPosting">
-  <a href="{{ SITEURL}}/{{ article.url }}">
+<div class="article" itemscope itemtype="http://schema.org/BlogPosting" class="border-bottom py-3">
+  <a href="{{ SITEURL}}/{{ article.url }}" class="text-decoration-none">
     <h2 itemprop="name headline">{{ article.title }}</h2>
   </a>
   <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.local_date }}</time>
@@ -13,16 +13,14 @@
   </span>
   <div class="summary">{{  article.summary  }}</div>
   {% if article.category %}
-  Category:
   <span itemprop="articleSection">
-    <a href="{{ SITEURL }}/{{ article.category.url }}" rel="category">{{ article.category }}</a>
+    <a href="{{ SITEURL }}/{{ article.category.url }}" rel="category" class="badge bg-danger text-decoration-none">{{ article.category }}</a>
   </span>
   {% endif %}
   {% if article.tags %}
-  Tags:
   {% for tag in article.tags %}
-  <span    itemprop="keywords">
-    <a href="{{SITEURLL }}/{{ tag.url  }}" rel="tag">{{ tag }}</a>
+  <span itemprop="keywords">
+    <a href="{{ SITEURLL }}/{{ tag.url }}" rel="tag" class="badge bg-primary text-decoration-none">{{ tag }}</a>
   {% endfor %}
   {% endif %}
 </div>

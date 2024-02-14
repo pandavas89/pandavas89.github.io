@@ -33,18 +33,17 @@
       <img src="https://cdn-icons-png.flaticon.com/128/5326/5326305.png" width="40" height="32"></img>
       <span class="fs-1">{{ SITENAME }}</span>
     </a>
-    <ul class="nav nav-pills nav-justified fs-2 p-1 algin-items-baseline p-1">
+    <ul class="nav nav-pills nav-justified fs-2 algin-items-baseline">
       <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">Home</a>
+        <a href="#" class="nav-link p-3 active" aria-current="page">Home</a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-link" aria-current="page">About</a>
+        <a href="#" class="nav-link p-3" aria-current="page">About</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categories</a>
+        <a class="nav-link dropdown-toggle p-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categories</a>
         <ul class="dropdown-menu fs-2 py-3">
-          <li><a class="dropdown-item py-3" href="#">python</a></li>
-          <li><a class="dropdown-item py-3" href="#">flutter</a></li>
+          <li><a class="dropdown-item py-3" href="#">programming</a></li>
           <li><a class="dropdown-item py-3" href="#">productivity</a></li>
         </ul>
       </li>
@@ -52,7 +51,7 @@
   </header>
   <!-- content row -->
   <div class="row">
-    <div class="col-md-8 col-md-offset-2">
+    <div class="col-lg-10 offset-lg-1">
       {% block content %}{% endblock %}
     </div>
   </div>

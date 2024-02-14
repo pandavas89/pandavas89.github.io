@@ -1,33 +1,31 @@
 {% extends "base.html" %}
-{% block description %}Title: {{ article.title }}; Date: {{ article.date|strftime('%Y-%m-%d') }}; Author: {{ article.author }}{% endblock %}
+{% block description %}Title: {{ article.title }}; Date: {{ article.date|strftime('%Y-%m-%d') }};{% endblock %}
 {% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
 {% block content %}
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting">
-	<div class="text-center article-header">
-		<h1 itemprop="name headline" class="article-title">{{ article.title }}</h1>
-		<span itemprop="author" itemscope itemtype="http://schema.org/Person">
-			<h4 itemprop="name">{{article.author or "Wilson Freitas"}}</h4>
-		</span>
-		<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
+	<div class="article-header mb-3 bg-light p-3">
+		<h1 itemprop="name headline">{{ article.title }}</h1>
+		{% if article.subtitle %}
+		<h3>{{ article.subtitle }}</h3>
+		{% endif %}
+		<div class="d-flex justify-content-between">
+			<time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.locale_date }}</time>
+			<div class="d-flex justify-content-end">
+			{% if article.category %}
+				<span itemprop="articleSection" class="px-1">
+					<a href="{{ SITEURL }}/{{ article.category.url }}" rel="category" class="badge bg-danger text-decoration-none">{{ article.category }}</a>
+				</span>
+			{% endif %}
+			{% if article.tags %} 
+				{% for tag in article.tags %}
+				<span itemprop="keywords" class="px-1">
+					<a href="{{ SITEURL }}/{{ tag.url }}" rel="tag" class="badge bg-primary text-decoration-none">{{ tag }}</a>
+				</span>
+				{% endfor %}
+			{% endif %}
+			</div>
+		</div>
 	</div>
-	{% if article.category %}
-	<div>
-		Category:
-		<span itemprop="articleSection">
-			<a href="{{ SITEURL }}/{{ article.category.url }}" rel="category">{{ article.category }}</a>
-		</span>
-	</div>
-	{% endif %}
-	{% if article.tags %} 
-	<div>
-		Tags:
-		{% for tag in article.tags %}
-		<span itemprop="keywords">
-			<a href="{{ SITEURL }}/{{ tag.url }}" rel="tag">{{ tag }}</a>
-		</span>
-		{% endfor %}
-	</div>
-	{% endif %}
 	<div itemprop="articleBody" class="article-body">{{ article.content }}</div>
 	<hr>
 	<h2>Comments</h2>
