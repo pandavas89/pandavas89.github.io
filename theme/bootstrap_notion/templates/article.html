@@ -51,8 +51,13 @@
 		<div itemprop="articleBody" class="article-body">{{ article.content }}</div>
 		<hr>
 		<h2>Comments</h2>
-		{% include "twitter.html" %}
-		{% include 'disqus.html' %}
+		<script src="https://utteranc.es/client.js"
+    	repo="https://github.com/pandavas89/pandavas89.github.io"
+      issue-term="pathname"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+		</script>
 	</div>
 </div>
 {% endblock %}
