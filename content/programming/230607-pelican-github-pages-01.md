@@ -40,3 +40,5 @@ Series: Github_Pages_with_Pelican
 `.nojekyll`은 `Jekyll`로 작성된 컨텐츠가 아니라는 것을 지시하는 파일로, `Github Pages`의 기본 배포 방식인 `Jekyll` 빌드를 막는다. 해당 파일이 없으면 리포지토리 업로드를 할 때 마다 `Jekyll` 빌드를 시도하므로 `Github Pages`가 정상적으로 표시되지 않는다. `Source`를 `Github Actions`로 바꾸면 `Jekyll` 빌드를 시도하지 않지만, 대신 `Github Pages`의 경로를 지정할 수 없게 되는 문제점이 있다.
 
 다음으로는 배포 전체를 자동화 할 수 있도록 `Github Action`을 작성해보자
+
+content test
