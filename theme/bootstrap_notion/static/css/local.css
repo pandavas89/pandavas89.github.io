@@ -1,4 +1,4 @@
-#sticky-toc {
+.sticky {
 	position: sticky;
 	top: 1rem;
 	align-self: start;

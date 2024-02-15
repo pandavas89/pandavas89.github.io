@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: pip install pelican markdown beautifulsoup4
+      - run: pip install pelican markdown beautifulsoup4 pelican-series
       - run: pelican content
       - run: echo "blog.tykl.me" >> output/CNAME
       - run: echo "" >> output/.nojekyll

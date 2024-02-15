@@ -3,13 +3,28 @@
 {% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
 {% block content %}
 <div class="d-flex flex-row">
-	<div class="col-xl-2">
-		<div id="sticky-toc">
+	<div class="col-xl-4">
+		<div id="sticky-toc" class="sticky">
+			{% if article.series %}
+			<div class="sticky">
+				Series
+				<ul>
+					{% for series_article in article.series.all %}
+					<li>					
+						<a href="{{ SITEURL }}/{{ series_article.url }}">{{ series_article.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			{% endif %}
+
+			{% if article.toc %}
 			Contents
 			{{ article.toc }}
+			{% endif %}
 		</div>
 	</div>
-	<div class="article col-xl-10" itemscope itemtype="http://schema.org/BlogPosting">
+	<div class="article col-xl-8" itemscope itemtype="http://schema.org/BlogPosting">
 		<div class="article-header mb-3 bg-light p-3">
 			<h1 itemprop="name headline">{{ article.title }}</h1>
 			{% if article.subtitle %}
