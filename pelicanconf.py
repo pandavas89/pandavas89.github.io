@@ -25,6 +25,10 @@ LINKS = (
 PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['pelican-toc', 'pelican.plugins.series', 'pelican.plugins.sitemap']
 
+SITEMAP = {
+    'format': 'xml',
+}
+
 # Social widget
 SOCIAL = (
     ('Instagram', 'https://www.instagram.com/pandavas89/'),
