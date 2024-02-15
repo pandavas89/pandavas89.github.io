@@ -23,7 +23,7 @@ LINKS = (
 )
 
 PLUGIN_PATHS = ['pelican-plugins']
-PLUGINS = ['pelican-toc', 'pelican.plugins.series']
+PLUGINS = ['pelican-toc', 'pelican.plugins.series', 'pelican.plugins.sitemap']
 
 # Social widget
 SOCIAL = (
