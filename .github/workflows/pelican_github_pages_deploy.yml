@@ -24,3 +24,4 @@ jobs:
       - run: git --work-tree output add --all
       - run: git commit -m "Automatic deployment by github-actions"
       - run: git push origin HEAD:gh_pages --force
+
