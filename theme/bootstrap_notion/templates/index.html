@@ -4,7 +4,7 @@
 {% if articles %}
 {% for article in articles_page.object_list %}
 <div class="article" itemscope itemtype="http://schema.org/BlogPosting" class="border-bottom py-3">
-  <a href="{{ SITEURL}}/{{ article.url }}" class="text-decoration-none">
+  <a href="{{ SITEURL }}/{{ article.url }}" class="text-decoration-none">
     <h2 itemprop="name headline">{{ article.title }}</h2>
   </a>
   <time datetime="{{ article.date.isoformat() }}" itemprop="datePublished">{{ article.local_date }}</time>
