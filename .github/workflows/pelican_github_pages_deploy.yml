@@ -18,6 +18,7 @@ jobs:
       - run: pelican content
       - run: echo "blog.tykl.me" >> output/CNAME
       - run: echo "" >> output/.nojekyll
+      - run: cp -f ./robots.txt ./output/robots.txt
       - run: git config user.name github-actions
       - run: git config user.email github-actions@github.com
       - run: git --work-tree output add --all
