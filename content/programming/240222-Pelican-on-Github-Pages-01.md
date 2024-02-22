@@ -39,7 +39,7 @@ status: published
 1. `index.html` 파일을 간단하게 생성해 줍니다
 
 
-	![Pelican on Github Pages 01_2](/programming/image/Pelican on Github Pages 01_2.png)
+	![Pelican-on-Github-Pages-01_2](/programming/image/Pelican-on-Github-Pages-01_2.png)
 
 	
 	```html
@@ -98,7 +98,7 @@ status: published
 
 여러분의 `GitHub Pages`에는 무엇이든 올릴 수 있습니다. 다만, 모든 보여지는 부분과 내용들을 html과 css, 때로는 javascript를 이용해서 작성해야 할 뿐입니다. 하지만 우리 모두가 알듯이, 그건 너무 불편하겠네요.
 
-![Pelican-on-Github-Pages-01_8](/image/Pelican-on-Github-Pages-01_8.png)
+![Pelican-on-Github-Pages-01_8](/programming/image/Pelican-on-Github-Pages-01_8.png)
 
 블로그를 작성하듯  `GitHub Pages`를 작성할 수는 없는걸까요? 걱정하지 마세요. 그런 우리의 걱정을 달래주기 위해 정적 사이트 생성기가 있습니다.
 
@@ -118,7 +118,7 @@ status: published
 
 그래서, 이미 익숙한 언어를 이용해 기술 블로그를 구현하기 위해 `python` 기반의 SSG들을 `JAMStack`에서 찾아봤습니다. `MkDocs`와 `Sphinx`는 각각 프로젝트 문서 작성과 기술 문서 작성을 위한 SSG이고, `Pelican`이 블로그를 구축하기 위한 SSG로는 가장 인기 있는 도구인 셈입니다. 
 
-![Pelican-on-Github-Pages-01_9](/image/Pelican-on-Github-Pages-01_9.png)
+![Pelican-on-Github-Pages-01_9](/programming/image/Pelican-on-Github-Pages-01_9.png)
 
 <br/>
 
