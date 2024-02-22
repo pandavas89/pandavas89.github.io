@@ -14,11 +14,11 @@ status: published
 
 `Github Pages`는 `Github`에서 제공하는 호스팅 서비스입니다. 계정에 따라 `User`, `Organization`, `Project` 깃허브 페이지를 생성할 수 있습니다. 실제로 많은 프로젝트들이 `Github pages`에서 사이트를 호스팅하고 있습니다. 다음은 몇 가지 예시입니다
 
-- [Yeoman]([https://yeoman.io/](https://yeoman.io/))
+- [Yeoman](https://yeoman.io/)
 
-- [Jekyll]([https://jekyllrb-ko.github.io/](https://jekyllrb-ko.github.io/))
+- [Jekyll](https://jekyllrb-ko.github.io/)
 
-- [bootstrap]([https://getbootstrap.com/](https://getbootstrap.com/))
+- [bootstrap](https://getbootstrap.com/)
 
 # GitHub Pages 만들기
 
