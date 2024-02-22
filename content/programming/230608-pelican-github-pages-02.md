@@ -3,7 +3,7 @@ Subtitle: Github Action 기반 배포 자동화하기
 Date: 2023-06-08 18:00:00
 Tags: Pelican, Github, Github Action
 Series: Github_Pages_with_Pelican
-Published: False
+status: hidden
 
 [앞선 글](/pelican-on-github-pages-01)에서, `Pelican`으로 정적 사이트를 생성하고 배포하는 방법을 알아보았습니다. 이제, `Pelican` 프로젝트를 푸시하면 자동으로 `Github Pages`가 업데이트 되도록 해 보겠습니다.
 

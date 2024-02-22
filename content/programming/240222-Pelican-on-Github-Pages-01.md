@@ -6,7 +6,7 @@ Category: python
 Series: Github Pages with Pelican
 Date: 2024-02-22
 Tags: Github
-Published: True
+status: published
 
 제가 `python`으로 기술블로그를 유지하면서 알게 된 것들을 간단하게 얘기하고자 합니다. `Ruby` 새로 배우지 않겠다고 발버둥 친 게 여기까지 왔습니다. 저처럼 발버둥치려는 분들께 조금이나마 도움이 되길 바랍니다.
 

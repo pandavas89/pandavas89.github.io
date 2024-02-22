@@ -3,7 +3,7 @@ Subtitle: Pelican 소개
 Date: 2023-06-07
 Tags: Pelican, Github, Github Action
 Series: Github_Pages_with_Pelican
-Published: False
+status: hidden
 
 `Github Pages`는 퍽 훌륭한 정적 사이트 제공 서비스지만, 그거 하나 쓰자고 달리 써 본 적도 없는 `Jekyll`을 새로 배우는 건 불합리한 일입니다. 덕분에 쓰다가 말다가를 반복하던 참에, `python` 기반 정적 사이트 생성기인 `Pelican`의 존재를 알게 되었습니다. `Pelican`으로 정적 사이트를 생성하는 방법을 알아보겠습니다.
 
