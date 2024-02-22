@@ -3,6 +3,8 @@ SITENAME = 'PlayEng Ground'
 SITEURL = 'https://blog.tykl.me'
 
 PATH = 'content'
+STATIC_PATHS=['productivity', 'programming']
+ARTICLE_PATHS = STATIC_PATHS
 
 TIMEZONE = 'Asia/Seoul'
 

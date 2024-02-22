@@ -8,6 +8,8 @@ Date: 2024-02-22
 Tags: Github
 Published: True
 
+제가 `python`으로 기술블로그를 유지하면서 알게 된 것들을 간단하게 얘기하고자 합니다.
+
 # Github Pages
 
 `Github Pages`는 `Github`에서 제공하는 호스팅 서비스입니다. 계정에 따라 `User`, `Organization`, `Project` 깃허브 페이지를 생성할 수 있습니다. 실제로 많은 프로젝트들이 `Github pages`에서 사이트를 호스팅하고 있습니다. 다음은 몇 가지 예시입니다
