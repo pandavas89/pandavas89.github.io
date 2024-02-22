@@ -8,7 +8,7 @@ Date: 2024-02-22
 Tags: Github
 Published: True
 
-제가 `python`으로 기술블로그를 유지하면서 알게 된 것들을 간단하게 얘기하고자 합니다.
+제가 `python`으로 기술블로그를 유지하면서 알게 된 것들을 간단하게 얘기하고자 합니다. `Ruby` 새로 배우지 않겠다고 발버둥 친 게 여기까지 왔습니다. 저처럼 발버둥치려는 분들께 조금이나마 도움이 되길 바랍니다.
 
 # Github Pages
 
@@ -20,17 +20,17 @@ Published: True
 
 - [bootstrap]([https://getbootstrap.com/](https://getbootstrap.com/))
 
-# GitHub Pages
+# GitHub Pages 만들기
 
 `Github Pages` 사용하는 방법을 간단하게 설명해 보겠습니다. 초기에 필요한 몇 가지 설정과 나중에 다루게 될 빌드 배포를 제외하면 `Github Pages` 호스팅은 다른 모든 정적 사이트 호스팅과 다르지 않습니다. 이 설명에서는 `User` 깃허브 페이지를 기준으로 설명합니다.
 
 1. GitHub 로그인
 
-	![Pelican on Github Pages 01_0](images/Pelican on Github Pages 01_0.png)
+	![Pelican on Github Pages 01_0](programming/images/Pelican on Github Pages 01_0.png)
 
 1. repository 생성: {유저 이름}.github.io로 저장소를 생성합니다.
 
-	![Pelican on Github Pages 01_1](images/Pelican on Github Pages 01_1.png)
+	![Pelican on Github Pages 01_1](programming/images/Pelican on Github Pages 01_1.png)
 
 	- 이 때, 저장소는 public이 아니어도 상관없습니다.
 
@@ -39,7 +39,7 @@ Published: True
 1. `index.html` 파일을 간단하게 생성해 줍니다
 
 
-	![Pelican on Github Pages 01_2](images/Pelican on Github Pages 01_2.png)
+	![Pelican on Github Pages 01_2](programming/images/Pelican on Github Pages 01_2.png)
 
 	
 ```html
@@ -51,17 +51,17 @@ Published: True
 </html>
 ```
 
-	![Pelican on Github Pages 01_3](images/Pelican on Github Pages 01_3.png)
+	![Pelican on Github Pages 01_3](programming/images/Pelican on Github Pages 01_3.png)
 
 1. 저장소 설정의 pages에서 `GitHub Pages` 사용을 설정합니다.
 
-	![Pelican on Github Pages 01_4](images/Pelican on Github Pages 01_4.png)
+	![Pelican on Github Pages 01_4](programming/images/Pelican on Github Pages 01_4.png)
 
 1. 변경 내역을 저장소에 푸시합니다.
 
 1. https://{유저 이름}.github.io에 접속해 변경내역이 반영된 것을 확인합니다.
 
-	![Pelican on Github Pages 01_5](images/Pelican on Github Pages 01_5.png)
+	![Pelican on Github Pages 01_5](programming/images/Pelican on Github Pages 01_5.png)
 
 1. 새로운 페이지 `hello.html`을 만들어 주고, 링크를 걸어 보겠습니다.
 
@@ -88,9 +88,9 @@ Published: True
 </html>
 ```
 
-	![Pelican on Github Pages 01_6](images/Pelican on Github Pages 01_6.png)
+	![Pelican on Github Pages 01_6](programming/images/Pelican on Github Pages 01_6.png)
 
-	![Pelican on Github Pages 01_7](images/Pelican on Github Pages 01_7.png)
+	![Pelican on Github Pages 01_7](programming/images/Pelican on Github Pages 01_7.png)
 
 	두 문서에서 하이퍼링크 방식이 서로 달랐던 걸 눈치채셨나요? 각각 상대주소와 절대주소를 사용했습니다.
 
