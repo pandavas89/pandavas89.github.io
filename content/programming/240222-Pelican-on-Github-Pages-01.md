@@ -1,7 +1,7 @@
 icon: 🦤
 Title: Pelican으로 깃허브 페이지 만들기 01
 Subtitle: 깃허브 페이지와 정적 사이트 생성기
-slug: Pelican on Github Pages 01
+slug:-Pelican-on-Github-Pages-01
 Category: python
 Series: Github Pages with Pelican
 Date: 2024-02-22
