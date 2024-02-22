@@ -26,11 +26,11 @@ status: published
 
 1. GitHub 로그인
 
-	![Pelican on Github Pages 01_0](programming/images/Pelican on Github Pages 01_0.png)
+	![Pelican-on-Github-Pages-01_0](programming/images/Pelican-on-Github-Pages-01_0.png)
 
 1. repository 생성: {유저 이름}.github.io로 저장소를 생성합니다.
 
-	![Pelican on Github Pages 01_1](programming/images/Pelican on Github Pages 01_1.png)
+	![Pelican-on-Github-Pages-01_1](programming/images/Pelican-on-Github-Pages-01_1.png)
 
 	- 이 때, 저장소는 public이 아니어도 상관없습니다.
 
@@ -51,46 +51,46 @@ status: published
 </html>
 ```
 
-	![Pelican on Github Pages 01_3](programming/images/Pelican on Github Pages 01_3.png)
+	![Pelican-on-Github-Pages-01_3](programming/images/Pelican-on-Github-Pages-01_3.png)
 
 1. 저장소 설정의 pages에서 `GitHub Pages` 사용을 설정합니다.
 
-	![Pelican on Github Pages 01_4](programming/images/Pelican on Github Pages 01_4.png)
+	![Pelican-on-Github-Pages-01_4](programming/images/Pelican-on-Github-Pages-01_4.png)
 
 1. 변경 내역을 저장소에 푸시합니다.
 
 1. https://{유저 이름}.github.io에 접속해 변경내역이 반영된 것을 확인합니다.
 
-	![Pelican on Github Pages 01_5](programming/images/Pelican on Github Pages 01_5.png)
+	![Pelican-on-Github-Pages-01_5](programming/images/Pelican-on-Github-Pages-01_5.png)
 
 1. 새로운 페이지 `hello.html`을 만들어 주고, 링크를 걸어 보겠습니다.
 
 	
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <a href="index.html">back to index</a>
-  </body>
-</html>
-```
+	```html
+	<!DOCTYPE html>
+	<html>
+	  <body>
+	    <a href="index.html">back to index</a>
+	  </body>
+	</html>
+	```
 
 	`index.html`에도 새로 만들어 준 `hello.html`을 향한 링크를 걸어주겠습니다. 
 
 	
-```html
-<!DOCTYPE html>
-<html>
-  <body>
-    Hello, world!<br>
-    <a href="https://dev-pandavas.github.io/hello.html">to hello.html</a>
-  </body>
-</html>
-```
+	```html
+	<!DOCTYPE html>
+	<html>
+	  <body>
+	    Hello, world!<br>
+	    <a href="https://dev-pandavas.github.io/hello.html">to hello.html</a>
+	  </body>
+	</html>
+	```
 
-	![Pelican on Github Pages 01_6](programming/images/Pelican on Github Pages 01_6.png)
+	![Pelican-on-Github-Pages-01_6](programming/images/Pelican-on-Github-Pages-01_6.png)
 
-	![Pelican on Github Pages 01_7](programming/images/Pelican on Github Pages 01_7.png)
+	![Pelican-on-Github-Pages-01_7](programming/images/Pelican-on-Github-Pages-01_7.png)
 
 	두 문서에서 하이퍼링크 방식이 서로 달랐던 걸 눈치채셨나요? 각각 상대주소와 절대주소를 사용했습니다.
 
@@ -98,7 +98,7 @@ status: published
 
 여러분의 `GitHub Pages`에는 무엇이든 올릴 수 있습니다. 다만, 모든 보여지는 부분과 내용들을 html과 css, 때로는 javascript를 이용해서 작성해야 할 뿐입니다. 하지만 우리 모두가 알듯이, 그건 너무 불편하겠네요.
 
-![Pelican on Github Pages 01_8](images/Pelican on Github Pages 01_8.png)
+![Pelican-on-Github-Pages-01_8](images/Pelican-on-Github-Pages-01_8.png)
 
 블로그를 작성하듯  `GitHub Pages`를 작성할 수는 없는걸까요? 걱정하지 마세요. 그런 우리의 걱정을 달래주기 위해 정적 사이트 생성기가 있습니다.
 
@@ -118,7 +118,7 @@ status: published
 
 그래서, 이미 익숙한 언어를 이용해 기술 블로그를 구현하기 위해 `python` 기반의 SSG들을 `JAMStack`에서 찾아봤습니다. `MkDocs`와 `Sphinx`는 각각 프로젝트 문서 작성과 기술 문서 작성을 위한 SSG이고, `Pelican`이 블로그를 구축하기 위한 SSG로는 가장 인기 있는 도구인 셈입니다. 
 
-![Pelican on Github Pages 01_9](images/Pelican on Github Pages 01_9.png)
+![Pelican-on-Github-Pages-01_9](images/Pelican-on-Github-Pages-01_9.png)
 
 <br/>
 
