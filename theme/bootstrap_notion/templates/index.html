@@ -11,7 +11,7 @@
   <span itemprop="author" itempscope="" itemtype="http://schema.org/Person">
     <span itemprop="name">{{ article.author }}</span>
   </span>
-  <div class="summary">{{  article.summary  }}</div>
+  <div class="summary">{{  article.summary|replace("<h1>", "</h1>")  }}</div>
   {% if article.category %}
   <span itemprop="articleSection">
     <a href="{{ SITEURL }}/{{ article.category.url }}" rel="category" class="badge bg-danger text-decoration-none">{{ article.category }}</a>
