@@ -43,12 +43,12 @@ status: published
 
 	
 	```html
-	<!DOCTYPE html>
-	<html>
-	  <body>
-	    Hello, world!
-	  </body>
-	</html>
+		<!DOCTYPE html>
+		<html>
+		  <body>
+		    Hello, world!
+		  </body>
+		</html>
 	```
 
 	![Pelican-on-Github-Pages-01_3](/programming/image/Pelican-on-Github-Pages-01_3.png)
@@ -67,25 +67,25 @@ status: published
 
 	
 	```html
-	<!DOCTYPE html>
-	<html>
-	  <body>
-	    <a href="index.html">back to index</a>
-	  </body>
-	</html>
+		<!DOCTYPE html>
+		<html>
+		  <body>
+		    <a href="index.html">back to index</a>
+		  </body>
+		</html>
 	```
 
 	`index.html`에도 새로 만들어 준 `hello.html`을 향한 링크를 걸어주겠습니다. 
 
 	
 	```html
-	<!DOCTYPE html>
-	<html>
-	  <body>
-	    Hello, world!<br>
-	    <a href="https://dev-pandavas.github.io/hello.html">to hello.html</a>
-	  </body>
-	</html>
+		<!DOCTYPE html>
+		<html>
+		  <body>
+		    Hello, world!<br>
+		    <a href="https://dev-pandavas.github.io/hello.html">to hello.html</a>
+		  </body>
+		</html>
 	```
 
 	![Pelican-on-Github-Pages-01_6](/programming/image/Pelican-on-Github-Pages-01_6.png)
