@@ -6,7 +6,7 @@ Category: python
 Series: Github Pages with Pelican
 Date: 2024-02-27
 Tags: Pelican,Github
-Status: 작성중
+Status: published
 
 # 들어가기에 앞서
 
