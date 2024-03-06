@@ -1,1 +1,0 @@
-__절대로 gh_pages에 직접 푸시하지 말 것, 푸시하면 github actions에 의해 자동으로 갱신됨__

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-161F11456P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-161F11456P');
+  </script>
+  <meta charset="utf-8">
+  <title>PlayEng Ground</title>
+	<meta name="description" content="Title: Pelican으로 깃허브 페이지 만들기 01; Date: 2024-02-22;">
+	<meta name="author" content="pandavas89">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://blog.tykl.me/theme/css/ipython.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link href="https://blog.tykl.me/theme/css/local.css" rel="stylesheet">
+	<link href="https://blog.tykl.me/theme/css/pygments.css" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: "NanumGothic";
+      src: url("https://blog.tykl.me/theme/fonts/NanumGothic.ttf");
+    }
+  </style>
+</head>
+<body style="font-family: NanumGothic;">
+<div class="container">
+  <!-- 상단 header -->
+  <header class="d-flex flex-wrap justify-content-between py-3 mb-4 border-bottom align-items-baseline">
+    <a href="https://blog.tykl.me" class="d-flex align-items-center mb-3 mb-md-0 link-body-emphasis text-decoration-none">
+      <img src="https://cdn-icons-png.flaticon.com/128/5326/5326305.png" width="32" height="32" class="me-4"></img>
+      <span class="fs-1 ml-2">PlayEng Ground</span>
+    </a>
+    <ul class="nav nav-pills nav-justified fs-2 algin-items-baseline">
+      <li class="nav-item mx-2">
+        <a href="https://blog.tykl.me" class="nav-link p-3 active" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="#" class="nav-link p-3" aria-current="page">About</a>
+      </li>
+      <li class="nav-item dropdown mx-2">
+        <a class="nav-link dropdown-toggle p-3" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categories</a>
+        <ul class="dropdown-menu fs-2 py-3">
+          <li><a class="dropdown-item py-3" href="https://blog.tykl.me/category/python.html">python</a></li>
+        </ul>
+      </li>
+      <li class="nav-item mx-2">
+        <a href="https://blog.tykl.me/archive.html" class="nav-link p-3" aria-current="page">Archive</a>
+      </li>
+    </ul>
+  </header>
+  <!-- content row -->
+  <div class="row">
+    <div class="col-lg-12">
+<div class="d-flex flex-row">
+	<div class="col-xl-4">
+		<div id="sticky-toc" class="sticky">
+			<div class="sticky">
+				Series
+				<ul>
+					<li>					
+						<a href="https://blog.tykl.me/Pelican-on-Github-Pages-01.html">Pelican으로 깃허브 페이지 만들기 01</a>
+					</li>
+					<li>					
+						<a href="https://blog.tykl.me/Pelican on Github Pages 02.html">Pelican으로 깃허브 페이지 만들기 02</a>
+					</li>
+				</ul>
+			</div>
+
+			Contents
+			<div id="toc"><ul><li><a class="toc-href" href="#" title="Pelican으로 깃허브 페이지 만들기 01">Pelican으로 깃허브 페이지 만들기 01</a><ul><li><a class="toc-href" href="#github pages" title="Github Pages">Github Pages</a></li><li><a class="toc-href" href="#github pages mandeulgi" title="GitHub Pages 만들기">GitHub Pages 만들기</a></li><li><a class="toc-href" href="#jeongjeog saiteu saengseonggi(ssg; static site generator)" title="정적 사이트 생성기(SSG; Static Site Generator)">정적 사이트 생성기(SSG; Static Site Generator)</a></li><li><a class="toc-href" href="#jekyll" title="Jekyll">Jekyll</a><ul><li><a class="toc-href" href="#ruby on rails giban" title="Ruby on Rails 기반">Ruby on Rails 기반</a></li></ul></li><li><a class="toc-href" href="#python giban ssg_1" title="python 기반 SSG">python 기반 SSG</a><ul><li><a class="toc-href" href="#camgojaryo" title="참고자료">참고자료</a></li></ul></li></ul></li></ul></div>
+		</div>
+	</div>
+	<div class="article col-xl-8" itemscope itemtype="http://schema.org/BlogPosting">
+		<div class="article-header mb-3 bg-light p-3">
+			<h1 itemprop="name headline">
+🦤 Pelican으로 깃허브 페이지 만들기 01</h1>
+			<h3>깃허브 페이지와 정적 사이트 생성기</h3>
+			<div class="d-flex justify-content-between">
+				<time datetime="2024-02-22T00:00:00+09:00" itemprop="datePublished">2024/02/22</time>
+				<div class="d-flex justify-content-end">
+					<span itemprop="articleSection" class="px-1">
+						<a href="https://blog.tykl.me/category/python.html" rel="category" class="badge bg-danger text-decoration-none">python</a>
+					</span>
+ 
+					<span itemprop="keywords" class="px-1">
+						<a href="https://blog.tykl.me/tag/github.html" rel="tag" class="badge bg-primary text-decoration-none">Github</a>
+					</span>
+				</div>
+			</div>
+		</div>
+		<div itemprop="articleBody" class="article-body"><p>제가 <code>python</code>으로 기술블로그를 유지하면서 알게 된 것들을 간단하게 얘기하고자 합니다. <code>Ruby</code> 새로 배우지 않겠다고 발버둥 친 게 여기까지 왔습니다. 저처럼 발버둥치려는 분들께 조금이나마 도움이 되길 바랍니다.</p>
+<h1 id="github pages">Github Pages</h1>
+<p><code>Github Pages</code>는 <code>Github</code>에서 제공하는 호스팅 서비스입니다. 계정에 따라 <code>User</code>, <code>Organization</code>, <code>Project</code> 깃허브 페이지를 생성할 수 있습니다. 실제로 많은 프로젝트들이 <code>Github pages</code>에서 사이트를 호스팅하고 있습니다. 다음은 몇 가지 예시입니다</p>
+<ul>
+<li>
+<p><a href="https://yeoman.io/">Yeoman</a></p>
+</li>
+<li>
+<p><a href="https://jekyllrb-ko.github.io/">Jekyll</a></p>
+</li>
+<li>
+<p><a href="https://getbootstrap.com/">bootstrap</a></p>
+</li>
+</ul>
+<h1 id="github pages mandeulgi">GitHub Pages 만들기</h1>
+<p><code>Github Pages</code> 사용하는 방법을 간단하게 설명해 보겠습니다. 초기에 필요한 몇 가지 설정과 나중에 다루게 될 빌드 배포를 제외하면 <code>Github Pages</code> 호스팅은 다른 모든 정적 사이트 호스팅과 다르지 않습니다. 이 설명에서는 <code>User</code> 깃허브 페이지를 기준으로 설명합니다.</p>
+<ol>
+<li>
+<p>GitHub 로그인</p>
+<p><img alt="Pelican-on-Github-Pages-01_0" src="/programming/image/Pelican-on-Github-Pages-01_0.png"/></p>
+</li>
+<li>
+<p>repository 생성: {유저 이름}.github.io로 저장소를 생성합니다.</p>
+<p><img alt="Pelican-on-Github-Pages-01_1" src="/programming/image/Pelican-on-Github-Pages-01_1.png"/></p>
+<ul>
+<li>
+<p>이 때, 저장소는 public이 아니어도 상관없습니다.</p>
+</li>
+<li>
+<p>단, private 저장소로 설정하더라도 github pages 상의 모든 문서는 열람할 수 있게 됩니다.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><code>index.html</code> 파일을 간단하게 생성해 줍니다</p>
+<p><img alt="Pelican-on-Github-Pages-01_2" src="/programming/image/Pelican-on-Github-Pages-01_2.png"/></p>
+<p><code>html
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;body&gt;
+        Hello, world!
+      &lt;/body&gt;
+    &lt;/html&gt;</code></p>
+<p><img alt="Pelican-on-Github-Pages-01_3" src="/programming/image/Pelican-on-Github-Pages-01_3.png"/></p>
+</li>
+<li>
+<p>저장소 설정의 pages에서 <code>GitHub Pages</code> 사용을 설정합니다.</p>
+<p><img alt="Pelican-on-Github-Pages-01_4" src="/programming/image/Pelican-on-Github-Pages-01_4.png"/></p>
+</li>
+<li>
+<p>변경 내역을 저장소에 푸시합니다.</p>
+</li>
+<li>
+<p>https://{유저 이름}.github.io에 접속해 변경내역이 반영된 것을 확인합니다.</p>
+<p><img alt="Pelican-on-Github-Pages-01_5" src="/programming/image/Pelican-on-Github-Pages-01_5.png"/></p>
+</li>
+<li>
+<p>새로운 페이지 <code>hello.html</code>을 만들어 주고, 링크를 걸어 보겠습니다.</p>
+<p><code>html
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;body&gt;
+        &lt;a href="index.html"&gt;back to index&lt;/a&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;</code></p>
+<p><code>index.html</code>에도 새로 만들어 준 <code>hello.html</code>을 향한 링크를 걸어주겠습니다. </p>
+<p><code>html
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      &lt;body&gt;
+        Hello, world!&lt;br&gt;
+        &lt;a href="https://dev-pandavas.github.io/hello.html"&gt;to hello.html&lt;/a&gt;
+      &lt;/body&gt;
+    &lt;/html&gt;</code></p>
+<p><img alt="Pelican-on-Github-Pages-01_6" src="/programming/image/Pelican-on-Github-Pages-01_6.png"/></p>
+<p><img alt="Pelican-on-Github-Pages-01_7" src="/programming/image/Pelican-on-Github-Pages-01_7.png"/></p>
+<p>두 문서에서 하이퍼링크 방식이 서로 달랐던 걸 눈치채셨나요? 각각 상대주소와 절대주소를 사용했습니다.</p>
+</li>
+</ol>
+<p><br/></p>
+<p>여러분의 <code>GitHub Pages</code>에는 무엇이든 올릴 수 있습니다. 다만, 모든 보여지는 부분과 내용들을 html과 css, 때로는 javascript를 이용해서 작성해야 할 뿐입니다. 하지만 우리 모두가 알듯이, 그건 너무 불편하겠네요.</p>
+<p><img alt="Pelican-on-Github-Pages-01_8" src="/programming/image/Pelican-on-Github-Pages-01_8.png"/></p>
+<p>블로그를 작성하듯  <code>GitHub Pages</code>를 작성할 수는 없는걸까요? 걱정하지 마세요. 그런 우리의 걱정을 달래주기 위해 정적 사이트 생성기가 있습니다.</p>
+<h1 id="jeongjeog saiteu saengseonggi(ssg; static site generator)">정적 사이트 생성기(SSG; Static Site Generator)</h1>
+<p>정적 사이트 생성기(이하 SSG)는 특정한 규칙에 따라 작성된 컨텐츠와 템플릿에 바탕해서 HTML 페이지를 만들어주는 도구입니다. 규칙에 맞춰 작성하기만 한다면, <code>GitHub Pages</code>에 올려야 할 HTML은 모두 SSG가 대신 만들어줍니다. 그리고 그 중에서도 <code>GitHub Pages</code>는 <code>Jekyll</code>을 기본 SSG로 제공하고 있습니다.</p>
+<h1 id="jekyll">Jekyll</h1>
+<p><code>Jekyll</code>은 <code>Ruby on Rails</code> 기반의 SSG입니다. 또한, <code>GitHub Pages</code>가 기본적으로 제공하는 SSG이기도 합니다. 그러면, 왜 이 시리즈의 제목은 <code>Jekyll on GitHub Pages</code>가 아닌걸까요? 왜 <code>Jekyll</code>을 사용하지 않고 다른 라이브러리를 쓰려고 하는걸까요?</p>
+<h2 id="ruby on rails giban">Ruby on Rails 기반</h2>
+<p><code>Jekyll</code>은 <code>Ruby on Rails</code> 프레임워크에 기반한 SSG입니다. 그리고 <code>Ruby on Rails</code>는 <code>Ruby</code> 언어에 기반한 프레임워크입니다. 국내에서 잘 쓰이지 않는 언어와 프레임워크인 탓에, 기술 블로그 하나 운영하겠다고 Jekyll을 배우는 건 수지타산이 맞지 않습니다. 사이드 프로젝트로 진행하는 경우 우리는 익숙한 언어를 사용해 빠르게 구현하고자 하거나, 새롭고 전도유망한 언어를 배우고 적용해 보고자 합니다. 안타깝게도 <code>Jekyll</code>은 어느 쪽에도 해당되지 않습니다.</p>
+<h1 id="python giban ssg_1">python 기반 SSG</h1>
+<p>그래서, 이미 익숙한 언어를 이용해 기술 블로그를 구현하기 위해 <code>python</code> 기반의 SSG들을 <code>JAMStack</code>에서 찾아봤습니다. <code>MkDocs</code>와 <code>Sphinx</code>는 각각 프로젝트 문서 작성과 기술 문서 작성을 위한 SSG이고, <code>Pelican</code>이 블로그를 구축하기 위한 SSG로는 가장 인기 있는 도구인 셈입니다. </p>
+<p><img alt="Pelican-on-Github-Pages-01_9" src="/programming/image/Pelican-on-Github-Pages-01_9.png"/></p>
+<p><br/></p>
+<p>다음 글에서는 <code>Pelican</code>을 설치하고 컨텐츠를 작성해 보겠습니다.</p>
+<hr/>
+<p><a href="https://dev-pandavas.github.io/">예시 블로그</a>에서 예제를, <a href="https://github.io/dev-pandavas/dev-pandavas.github.io">저장소</a>에서 코드를 확인해 보실 수 있습니다.</p>
+<h3 id="camgojaryo">참고자료</h3>
+<p><a href="[https://pages.github.com/](https://pages.github.com/)">GitHub Pages</a></p>
+<p><a href="[https://docs.github.com/ko/pages](https://docs.github.com/ko/pages)">GitHub Docs - GitHub Pages</a></p>
+<p><a href="[https://www.cloudflare.com/ko-kr/learning/performance/static-site-generator/](https://www.cloudflare.com/ko-kr/learning/performance/static-site-generator/)">CloudFlare - Static Site Generator</a></p>
+<p><a href="[https://jamstack.org/generators/](https://jamstack.org/generators/)">JAMStack</a></p></div>
+		<hr>
+		<h2>Comments</h2>
+		<script src="https://utteranc.es/client.js"
+    	repo="pandavas89/pandavas89.github.io"
+      issue-term="pathname"
+      theme="github-light"
+      crossorigin="anonymous"
+      async>
+		</script>
+	</div>
+</div>
+    </div>
+  </div>
+</div>
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
